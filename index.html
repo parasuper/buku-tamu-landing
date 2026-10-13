@@ -1,73 +1,398 @@
-/* ============================================================
-   SCROLL ANIMATION — FADE IN
-   ============================================================ */
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buku Tamu Digital — Solusi Modern untuk Instansi</title>
+<meta name="description" content="Aplikasi Buku Tamu Digital untuk kantor, sekolah, puskesmas, dan rumah sakit. Fully offline, touchscreen-ready, kiosk mode.">
 
-.reveal,
-.reveal-left,
-.reveal-right,
-.reveal-scale {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-    will-change: opacity, transform;
-}
+<!-- OG Meta Tags untuk Share Sosmed -->
+<meta property="og:title" content="Buku Tamu Digital — Solusi Modern untuk Instansi">
+<meta property="og:description" content="Aplikasi buku tamu offline untuk kantor, sekolah, puskesmas, dan rumah sakit.">
+<meta property="og:image" content="https://parasuper.github.io/buku-tamu-landing/preview.png">
+<meta property="og:url" content="https://parasuper.github.io/buku-tamu-landing/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Buku Tamu Digital — Solusi Modern untuk Instansi">
+<meta name="twitter:description" content="Aplikasi buku tamu offline untuk kantor, sekolah, puskesmas, dan rumah sakit.">
 
-.reveal-left  { transform: translateX(-40px); }
-.reveal-right { transform: translateX(40px); }
-.reveal-scale { transform: scale(0.9); }
+<link rel="stylesheet" href="landing.css">
+</head>
+<body class="no-js">
 
-.reveal.active,
-.reveal-left.active,
-.reveal-right.active,
-.reveal-scale.active {
-    opacity: 1;
-    transform: translateY(0) translateX(0) scale(1);
-}
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar">
+    <div class="container navbar-inner">
+        <a href="#" class="brand">
+            <span class="brand-icon">📖</span>
+            <span>Buku Tamu Digital</span>
+        </a>
+        <div class="nav-links">
+            <a href="#fitur">Fitur</a>
+            <a href="#cara">Cara Kerja</a>
+            <a href="#harga">Harga</a>
+            <a href="#kontak">Kontak</a>
+        </div>
+    </div>
+</nav>
 
-/* Delay bertingkat */
-.reveal-delay-1 { transition-delay: 0.1s; }
-.reveal-delay-2 { transition-delay: 0.2s; }
-.reveal-delay-3 { transition-delay: 0.3s; }
-.reveal-delay-4 { transition-delay: 0.4s; }
-.reveal-delay-5 { transition-delay: 0.5s; }
-.reveal-delay-6 { transition-delay: 0.6s; }
+<!-- ============ HERO ============ -->
+<section class="hero">
+    <div class="container hero-inner">
+        <div class="hero-text">
+            <div class="hero-badge">✨ Versi 1.0 — Siap Pakai</div>
+            <h1>Buku Tamu <span>Digital</span> untuk Instansi Modern</h1>
+            <p>
+                Solusi pencatatan tamu yang cepat, rapi, dan profesional.
+                Fully offline, touchscreen-ready, dan bisa dikustomisasi
+                sesuai identitas instansi Anda.
+            </p>
+            <div class="hero-buttons">
+                <a href="#kontak" class="btn btn-primary btn-lg">🚀 Minta Demo</a>
+                <a href="#fitur" class="btn btn-outline btn-lg">Lihat Fitur</a>
+            </div>
+            <div class="hero-trust">
+                <span>✅ Fully Offline</span>
+                <span>✅ Touchscreen Ready</span>
+                <span>✅ Custom Logo</span>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-visual-inner">
+                <div class="mock-header">
+                    <div class="mock-logo">📖</div>
+                    <div>
+                        <div class="mock-title">GrattNet Security System</div>
+                        <div class="mock-subtitle">Jl. Serma Mukhlas No. 147B</div>
+                    </div>
+                </div>
+                <div class="mock-form">
+                    <div class="mock-label">Nama Lengkap</div>
+                    <div class="mock-input"></div>
+                    <div class="mock-row">
+                        <div>
+                            <div class="mock-label">Jenis Kelamin</div>
+                            <div class="mock-btn-sm">👨 Laki-Laki</div>
+                        </div>
+                        <div>
+                            <div class="mock-label">&nbsp;</div>
+                            <div class="mock-btn-sm">👩 Perempuan</div>
+                        </div>
+                    </div>
+                    <div class="mock-row">
+                        <div>
+                            <div class="mock-label">Instansi</div>
+                            <div class="mock-input"></div>
+                        </div>
+                        <div>
+                            <div class="mock-label">No. HP</div>
+                            <div class="mock-input"></div>
+                        </div>
+                    </div>
+                    <div class="mock-label">Tujuan</div>
+                    <div class="mock-input">-- Pilih --</div>
+                    <div class="mock-submit">📸 Ambil Foto & Kirim</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-/* Hero langsung muncul saat load */
-.hero-text {
-    animation: fadeInUp 0.8s ease both;
-}
-.hero-visual {
-    animation: fadeInUp 0.8s ease 0.2s both;
-}
+<!-- ============ FITUR ============ -->
+<section class="section" id="fitur">
+    <div class="container">
+        <div class="section-title reveal">
+            <div class="section-label">FITUR</div>
+            <h2>Semua yang Anda Butuhkan</h2>
+            <p>Fitur lengkap untuk manajemen tamu modern</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card reveal reveal-delay-1">
+                <div class="feature-icon">📸</div>
+                <h3>Foto Tamu Otomatis</h3>
+                <p>Ambil foto tamu via webcam. Tersimpan otomatis bersama data kunjungan.</p>
+            </div>
+            <div class="feature-card reveal reveal-delay-2">
+                <div class="feature-icon">👆</div>
+                <h3>Touchscreen Ready</h3>
+                <p>Virtual keyboard otomatis muncul. Cocok untuk kiosk layar sentuh.</p>
+            </div>
+            <div class="feature-card reveal reveal-delay-3">
+                <div class="feature-icon">📊</div>
+                <h3>Export PDF & XLSX</h3>
+                <p>Laporan tamu siap cetak dengan kop instansi. Filter by tanggal, tujuan, kategori.</p>
+            </div>
+            <div class="feature-card reveal reveal-delay-4">
+                <div class="feature-icon">🎨</div>
+                <h3>Fully Customizable</h3>
+                <p>Gradient header, font, logo, background, dan dropdown tujuan bisa diatur.</p>
+            </div>
+            <div class="feature-card reveal reveal-delay-5">
+                <div class="feature-icon">🔒</div>
+                <h3>Fully Offline</h3>
+                <p>Tidak butuh internet. Data tersimpan lokal di komputer. Aman & privat.</p>
+            </div>
+            <div class="feature-card reveal reveal-delay-6">
+                <div class="feature-icon">💾</div>
+                <h3>Backup Otomatis</h3>
+                <p>Backup database 1x klik. Tersimpan di folder terpisah, aman dari kerusakan.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+<!-- ============ CARA KERJA ============ -->
+<section class="section section-alt" id="cara">
+    <div class="container">
+        <div class="section-title reveal">
+            <div class="section-label">CARA KERJA</div>
+            <h2>Hanya Butuh 3 Langkah</h2>
+            <p>Sederhana, cepat, dan langsung bisa dipakai</p>
+        </div>
+        <div class="steps">
+            <div class="step reveal reveal-delay-1">
+                <div class="step-num">1</div>
+                <h4>Install</h4>
+                <p>Jalankan installer 1x klik. Semua tabel & data awal dibuat otomatis.</p>
+            </div>
+            <div class="step-arrow reveal reveal-delay-2">→</div>
+            <div class="step reveal reveal-delay-3">
+                <div class="step-num">2</div>
+                <h4>Setup</h4>
+                <p>Isi identitas instansi, upload logo, atur tujuan & kategori dropdown.</p>
+            </div>
+            <div class="step-arrow reveal reveal-delay-4">→</div>
+            <div class="step reveal reveal-delay-5">
+                <div class="step-num">3</div>
+                <h4>Jalankan</h4>
+                <p>Buka kiosk mode di komputer tamu. Tamu isi data, foto, dan selesai!</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-/* Fallback: kalau JS tidak jalan, elemen tetap tampil */
-.no-js .reveal,
-.no-js .reveal-left,
-.no-js .reveal-right,
-.no-js .reveal-scale {
-    opacity: 1;
-    transform: none;
-}
+<!-- ============ HARGA ============ -->
+<section class="section" id="harga">
+    <div class="container">
+        <div class="section-title reveal">
+            <div class="section-label">HARGA</div>
+            <h2>Pilihan Paket</h2>
+            <p>Sesuaikan dengan kebutuhan instansi Anda</p>
+        </div>
+        <div class="pricing-grid">
+            <!-- Trial -->
+            <div class="pricing-card reveal reveal-delay-1">
+                <div class="pricing-header">
+                    <h3>Trial</h3>
+                    <div class="pricing-price">Gratis</div>
+                    <div class="pricing-desc">14 hari percobaan penuh</div>
+                </div>
+                <ul class="pricing-features">
+                    <li>Semua fitur lengkap</li>
+                    <li>Unlimited tamu</li>
+                    <li>Export PDF & XLSX</li>
+                    <li>Support via WA</li>
+                </ul>
+                <a href="#kontak" class="btn btn-outline" style="width:100%;">Mulai Trial</a>
+            </div>
 
-/* Reduce motion untuk aksesibilitas */
-@media (prefers-reduced-motion: reduce) {
-    .reveal, .reveal-left, .reveal-right, .reveal-scale {
-        opacity: 1;
-        transform: none;
-        transition: none;
-    }
-    .hero-text, .hero-visual {
-        animation: none;
-    }
-}
+            <!-- Full -->
+            <div class="pricing-card featured reveal reveal-delay-2">
+                <div class="pricing-badge">POPULER</div>
+                <div class="pricing-header">
+                    <h3>Full License</h3>
+                    <div class="pricing-price">Rp 1.500.000 <small>/ tahun</small></div>
+                    <div class="pricing-desc">Untuk 1 komputer/instansi</div>
+                </div>
+                <ul class="pricing-features">
+                    <li>Semua fitur Trial</li>
+                    <li>Berlaku 1 tahun penuh</li>
+                    <li>Update gratis</li>
+                    <li>Priority support</li>
+                    <li>Bantuan setup remote</li>
+                </ul>
+                <a href="#kontak" class="btn btn-primary" style="width:100%;">Hubungi Kami</a>
+            </div>
+
+            <!-- Custom -->
+            <div class="pricing-card reveal reveal-delay-3">
+                <div class="pricing-header">
+                    <h3>Custom</h3>
+                    <div class="pricing-price">Hubungi</div>
+                    <div class="pricing-desc">Multi-komputer / instansi besar</div>
+                </div>
+                <ul class="pricing-features">
+                    <li>Semua fitur Full</li>
+                    <li>Multi-komputer</li>
+                    <li>Custom fitur</li>
+                    <li>Instalasi on-site</li>
+                    <li>Training staff</li>
+                </ul>
+                <a href="#kontak" class="btn btn-outline" style="width:100%;">Konsultasi</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ TESTIMONI ============ -->
+<section class="section section-alt">
+    <div class="container">
+        <div class="section-title reveal">
+            <div class="section-label">TESTIMONI</div>
+            <h2>Apa Kata Mereka?</h2>
+        </div>
+        <div class="testimonials">
+            <div class="testimonial reveal reveal-delay-1">
+                <div class="testimonial-stars">★★★★★</div>
+                <p>"Sangat membantu! Tamu tidak perlu antri lagi. Data tersimpan rapi dan mudah dicari."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">SR</div>
+                    <div>
+                        <strong>Ibu Sari</strong>
+                        <span>Puskesmas Argasoka</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial reveal reveal-delay-2">
+                <div class="testimonial-stars">★★★★★</div>
+                <p>"Instalasi mudah, langsung bisa dipakai. Fitur export PDF sangat berguna untuk laporan bulanan."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">BW</div>
+                    <div>
+                        <strong>Pak Bambang</strong>
+                        <span>SDN 1 Argasoka</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial reveal reveal-delay-3">
+                <div class="testimonial-stars">★★★★★</div>
+                <p>"Custom logo & gradient bikin tampilan sesuai brand instansi. Tamu jadi lebih terkesan."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">MT</div>
+                    <div>
+                        <strong>Bu Maria</strong>
+                        <span>Kantor Desa Karanganyar</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<div class="container">
+    <div class="cta reveal-scale" id="kontak">
+        <h2>Siap Modernisasi Buku Tamu Anda?</h2>
+        <p>Hubungi kami sekarang untuk demo gratis atau konsultasi kebutuhan instansi Anda.</p>
+        <div class="cta-buttons">
+            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20dengan%20Buku%20Tamu%20Digital" class="btn-cta btn-wa" target="_blank">
+                <span class="btn-cta-icon">📱</span>
+                <div>
+                    <div class="btn-cta-label">WhatsApp</div>
+                    <div class="btn-cta-value">0812-3456-7890</div>
+                </div>
+            </a>
+            <a href="mailto:[email protected]?subject=Tanya%20Buku%20Tamu%20Digital" class="btn-cta btn-email">
+                <span class="btn-cta-icon">✉️</span>
+                <div>
+                    <div class="btn-cta-label">Email</div>
+                    <div class="btn-cta-value">[email protected]</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-col footer-brand-col">
+                <div class="footer-brand">📖 Buku Tamu Digital</div>
+                <p>
+                    Solusi Buku Tamu Digital untuk kantor, sekolah, puskesmas, dan rumah sakit.
+                    Fully offline, modern, dan profesional.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigasi</h4>
+                <a href="#fitur">Fitur</a>
+                <a href="#cara">Cara Kerja</a>
+                <a href="#harga">Harga</a>
+                <a href="#kontak">Kontak</a>
+            </div>
+            <div class="footer-col">
+                <h4>Produk</h4>
+                <a href="#fitur">Keunggulan</a>
+                <a href="#harga">Paket Harga</a>
+                <a href="#kontak">Demo</a>
+            </div>
+            <div class="footer-col">
+                <h4>Kontak</h4>
+                <a href="https://wa.me/6281234567890" target="_blank">📱 WhatsApp</a>
+                <a href="mailto:[email protected]">✉️ Email</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © <span id="year"></span> GrattNet Security System — All rights reserved.
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Auto-update tahun
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ============================================================
+    // SCROLL ANIMATION — ROBUST VERSION
+    // ============================================================
+    (function () {
+        function initReveal() {
+            // Hapus class no-js (tanda JS aktif)
+            document.body.classList.remove('no-js');
+
+            const elements = document.querySelectorAll(
+                '.reveal, .reveal-left, .reveal-right, .reveal-scale'
+            );
+
+            console.log('[Reveal] Elements found:', elements.length);
+
+            if (elements.length === 0) {
+                console.warn('[Reveal] Tidak ada elemen .reveal ditemukan');
+                return;
+            }
+
+            // Fallback kalau IntersectionObserver tidak support
+            if (!('IntersectionObserver' in window)) {
+                console.log('[Reveal] IntersectionObserver tidak support, fallback');
+                elements.forEach(el => el.classList.add('active'));
+                return;
+            }
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            elements.forEach(el => observer.observe(el));
+            console.log('[Reveal] Observer aktif untuk', elements.length, 'element');
+        }
+
+        // Jalankan setelah DOM ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initReveal);
+        } else {
+            initReveal();
+        }
+    })();
+</script>
+
+</body>
+</html>
