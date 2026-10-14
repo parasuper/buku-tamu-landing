@@ -1,6 +1,6 @@
-============================================================
+=======================
   BUKU TAMU DIGITAL — GrattNet Security System
-============================================================
+======================
 
 Selamat! Anda telah menerima aplikasi Buku Tamu Digital.
 
@@ -52,7 +52,7 @@ Jl. Serma Mukhlas No. 147B
 WA: 08xx-xxxx-xxxx
 Email: [email protected]
 
-============================================================
+=========================
   © 2026 GrattNet Security System
   Powered by GrattNet
-============================================================
+=========================
