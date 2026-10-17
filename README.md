@@ -44,6 +44,11 @@ BACKUP DATA
 - File backup tersimpan di folder "_backup\"
 - Disarankan backup rutin (minimal 1x seminggu)
 
+-----------------------------------------------------------
+**VIDEO TUTORIAL**
+-----------------------------------------------------------
+https://www.youtube.com/watch?v=UmhsSDnuv8Q
+
 ------------------------------------------------------------
 KONTAK VENDOR
 ------------------------------------------------------------
